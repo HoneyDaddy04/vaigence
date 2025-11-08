@@ -1,10 +1,17 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 
 export default function About() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About Vaigence - AI Automation Experts"
+        description="Meet the team of operators, process improvement experts, and automation specialists with over 30 years of experience turning operational challenges into automated solutions."
+        canonical="https://vaigence.com/about"
+        keywords="automation experts, business process specialists, AI automation consultants, operations team"
+      />
       <Navigation />
       
       <main className="pt-24">

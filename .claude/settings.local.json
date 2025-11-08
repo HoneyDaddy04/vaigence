@@ -4,7 +4,9 @@
       "Bash(npm run dev:*)",
       "Bash(npm install)",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nImplement comprehensive SEO optimization\n\nInstall react-helmet-async for dynamic meta tags:\n- Add HelmetProvider wrapper in App.tsx\n- Create reusable SEO component with dynamic meta tags\n\nAdd essential SEO files:\n- Create sitemap.xml with all pages\n- Create manifest.json for PWA support\n- Update robots.txt with sitemap reference\n- Remove duplicate favicon file\n\nEnhance index.html meta tags:\n- Add canonical URLs and keywords\n- Improve Open Graph tags (Facebook/LinkedIn)\n- Add Twitter Card meta tags\n- Add Schema.org structured data (Organization, WebSite, ProfessionalService)\n- Add PWA meta tags and theme color\n\nAdd dynamic page-specific SEO:\n- Homepage: AI automation focus\n- About: Team and expertise focus\n- Resources: Assessment and tools focus\n- Use Cases: Department-specific automation examples\n\nTechnical SEO improvements:\n- Add proper viewport and IE compatibility tags\n- Implement proper heading hierarchy\n- Add rel=canonical for all pages\n- Include keywords meta tags\n- Set up for future OG image (placeholder path added)\n\nCreate OG-IMAGE-TODO.md with specifications for custom social sharing image\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

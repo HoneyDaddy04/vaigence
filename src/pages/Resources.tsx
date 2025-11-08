@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Calculator, BookOpen, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { SEO } from "@/components/SEO";
 
 const Resources = () => {
   const [email, setEmail] = useState("");
@@ -15,6 +16,12 @@ const Resources = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Automation Resources - 2026 Assessment & ROI Calculator | Vaigence"
+        description="Download free automation resources: 2026 AI Automation Readiness Assessment, n8n Implementation Guide, and ROI Calculator. Designed for COOs and operations leaders."
+        canonical="https://vaigence.com/resources"
+        keywords="automation assessment, ROI calculator, n8n implementation guide, automation readiness, workflow automation resources"
+      />
       <Navigation />
       
       <main className="pt-24">
@@ -263,12 +270,14 @@ const Resources = () => {
                 <p className="text-muted-foreground font-light mb-6">
                   Want personalized guidance on your automation strategy?
                 </p>
+                <a href="/#contact">
                 <Button 
                   size="lg" 
                   className="bg-primary hover:bg-emerald-600 text-white"
                 >
                   Schedule a Consultation
                 </Button>
+                </a>
               </div>
             </div>
           </div>

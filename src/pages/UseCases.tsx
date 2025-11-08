@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2, AlertCircle, Zap, TrendingUp } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const categories = [
   "All",
@@ -317,6 +318,12 @@ const UseCases = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Automation Use Cases by Department | Vaigence"
+        description="Explore 18+ real-world automation use cases across Finance, HR, Sales, Operations, and more. See how AI-powered workflows transform business processes."
+        canonical="https://vaigence.com/use-cases"
+        keywords="automation use cases, workflow examples, finance automation, HR automation, sales automation, operations automation"
+      />
       <Navigation />
       
       <main className="pt-24">

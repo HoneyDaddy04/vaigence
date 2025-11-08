@@ -7,6 +7,7 @@ import { ImpactSection } from "@/components/ImpactSection";
 import { CTASection } from "@/components/CTASection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -37,6 +38,12 @@ const Index = () => {
   }, [location]);
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Vaigence - AI-Powered Automation for Modern Organizations"
+        description="Transform your organization from disconnected software tools to intelligent AI-powered automation. Designed for COOs and operations managers to optimize workflows and reduce costs."
+        canonical="https://vaigence.com/"
+        keywords="AI automation, workflow automation, business process automation, n8n, operations automation, COO tools, business efficiency, process optimization"
+      />
       <Navigation />
       <Hero />
       <ServicesSection />
