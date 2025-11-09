@@ -75,17 +75,35 @@ export const N8nSection = () => {
             </div>
           </div>
 
-          <div className="bg-card border border-border rounded-lg p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold tracking-tight mb-3">
-                  From Disconnected Tools to Unified Intelligence
-                </h3>
-                <p className="text-muted-foreground font-light leading-relaxed">
-                  n8n serves as the orchestration layer that transforms your scattered SaaS tools 
-                  into a cohesive, intelligent automation ecosystem. With visual workflow building 
-                  and powerful execution capabilities, we create automation that adapts to your business needs.
-                </p>
+          <div className="relative bg-gradient-to-br from-primary/10 via-primary/5 to-background border-2 border-primary/20 rounded-2xl p-8 md:p-12 overflow-hidden shadow-lg">
+            {/* Decorative background elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10" />
+
+            <div className="relative">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <span className="text-sm font-medium text-primary">Orchestration Platform</span>
+              </div>
+
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight mb-4 leading-tight">
+                From Disconnected Tools to <span className="text-primary">Unified Intelligence</span>
+              </h3>
+
+              <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl">
+                n8n serves as the orchestration layer that transforms your scattered SaaS tools
+                into a cohesive, intelligent automation ecosystem. With visual workflow building
+                and powerful execution capabilities, we create automation that adapts to your business needs.
+              </p>
+
+              {/* Visual emphasis bar */}
+              <div className="mt-6 flex items-center gap-3">
+                <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/50 rounded-full" />
+                <span className="text-sm text-muted-foreground font-light">Powered by n8n</span>
               </div>
             </div>
           </div>
