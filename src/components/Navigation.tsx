@@ -62,8 +62,19 @@ export const Navigation = () => {
           </div>
 
           <div className="hidden md:flex items-center">
-            <a 
-              href="#contact"
+            <a
+              href="/#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                if (typeof window !== 'undefined') {
+                  if (window.location.pathname !== '/') {
+                    window.location.href = '/#contact';
+                  } else {
+                    window.location.hash = 'contact';
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }
+              }}
               className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors duration-200"
             >
               Get Started
@@ -115,8 +126,20 @@ export const Navigation = () => {
                 </div>
                 
                 <div className="border-t border-border/20 pt-4 pb-6 px-4">
-                  <a 
-                    href="#contact"
+                  <a
+                    href="/#contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (typeof window !== 'undefined') {
+                        if (window.location.pathname !== '/') {
+                          window.location.href = '/#contact';
+                        } else {
+                          window.location.hash = 'contact';
+                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }
+                      setOpen(false);
+                    }}
                     className="w-full flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors duration-200"
                   >
                     Get Started
